@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Drag-n-drop Players</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
+  <script src="lib/d3.v3.js"></script>
+  <script src="lib/d3-jetpack.js"></script>
+  <script src="lib/radialBarChart.js"></script>
+  <script src="lib/jquery.tipsy.js"></script>
+  <script src="js/player.js"></script>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/hover.css" rel="stylesheet">
+  <link href="css/tipsy.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="init()"> 
+<div class="container">
+
+  <div>
+    <label for="currentPlayers">Select Your Players To Create a Lineup </label>
+  </div>
+  <div id="player_select"></div>
+  <div class="row dash-container">
+    <label for="chart" class="col-md-6">Next Player By Clinch Rating</label>
+    <label for="scatterplot" class="col-md-6">Next Player Offensive vs. Defensive Efficiency</label>
+    <div id="chart" class="col-md-6"></div>
+    <div id="scatterplot" class="col-md-6"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div id="table" class="col-md-6 dash-container"></div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+</body>
+</html>
